@@ -1,0 +1,190 @@
+body {
+    background-color: black;
+    font-family: "Arsenal SC", sans-serif;
+}
+
+nav {
+    margin: -20px -6px;
+    width: 101%;
+    height: 70px;
+    border-bottom: 0.5px solid white;
+}
+
+.logo-box {
+    font-size: 30px;
+    padding: 15px 30px;
+    color: white;
+    width: 240px;
+    height: 50;
+}
+
+.focus-t1 {
+    color: red;
+    font-family: "Arsenal SC", sans-serif;
+}
+
+.nav-links {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    margin: -68px 0px 0px 560px;
+    list-style: none;
+}
+
+.nav-links a {
+    font-size: 21px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(189, 179, 179);
+
+}
+
+.nav-links a:hover {
+    text-shadow: 0 0 15px #907cc9, 0 0 50px #db4eb1, 0 0 80px #dd4237;
+}
+
+.select-lang {
+    width: 50px;
+    height: 35px;
+    margin: -8px;
+    background-color: #00000000;
+    color: #328643;
+    font-size: 15px;
+    border: none;
+
+}
+
+.container-services {
+    background-color: #131014b0;
+    width: 101%;
+    height: 1300px;
+    margin: 17px 0px 0px -5px;
+    box-shadow: 0 1px 0px rgb(52, 56, 61);
+
+}
+
+.services-title {
+    position: absolute;
+    font-size: 40px;
+    -webkit-text-stroke: 1px rgb(189, 179, 179);
+    left: 43%;
+    top: 90px;
+    text-shadow: 1px 1px 10px black, 1px 1px 25px black, 1px 1px 50px black;
+
+}
+
+.icon-services {
+    width: 330px;
+    height: 210px;
+    object-fit: contain;
+    aspect-ratio: 0.5;
+    margin: 150px 10px 0 25px;
+    padding: 20px 20px 160px 20px;
+    justify-content: center;
+}
+
+.icon-services:hover {
+    box-shadow: 0px 0px 15px rgb(52, 56, 61);
+    border-radius:10px 11px ;
+}
+
+.container-services h1 {
+    position: absolute;
+    color: rgb(189, 179, 179);
+    font-size: 25px;
+    display: inline-flex;
+    margin: 410px 0px 0px -300px;
+    text-align: center;
+    line-height: 30px;
+    white-space: 35px;
+}
+
+.services-top2{
+position: relative;
+left:63%;
+}
+
+.services-top5{
+    position: relative;
+    left:65%;
+    }
+   
+    .services-top4{
+        position: relative;
+        left:34%;
+        }
+
+.apply-now {
+    position: absolute;
+    display: inline;
+    color: rgb(189, 179, 179);
+    display: inline-block;
+    margin: 470px 0px 0px -250px;
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: rgb(24, 26, 29);
+    border: 1px solid;
+    border-radius: 5px;
+    box-shadow: 4px 4px 9px black;
+}
+
+.apply-now:hover {
+    color: black;
+    background-color: cyan;
+    border:none;
+    font-weight: bold;
+    box-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 80px cyan;
+}
+
+
+footer {
+    position: relative;
+    background-color: #131014b0;
+    margin: -10px;
+    width: 101%;
+    height: 50px;
+    top: 10px;
+    border: 1px solid;
+    box-shadow: 0 1px 10px rgb(52, 56, 61);
+}
+
+.foot-title {
+    color: #00aa88;
+    font-size: 15px;
+    margin: 15px 60px;
+    white-space: 20px;
+}
+
+.focus-f1 {
+    color: white;
+
+}
+
+.focus-f2 {
+    color: red;
+    font-weight: bold;
+}
+
+.copyright {
+    color: #00aa88;
+    font-size: 15px;
+    text-align: center;
+    margin: -35px 0px;
+}
+
+.social-hw {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+}
+
+.icon-hw {
+    width: 45px;
+    margin: 0 25px 0 -5px;
+    border-radius: 500px;
+    aspect-ratio: 2;
+    object-fit: contain;
+}
