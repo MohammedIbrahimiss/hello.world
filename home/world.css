@@ -1,43 +1,42 @@
 body {
     background-color: black;
     font-family: "Arsenal SC", sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
 nav {
-    width: 100%;
+    margin: -20px -6px;
+    width: 101%;
     height: 70px;
     border-bottom: 0.5px solid white;
-    box-sizing: border-box;
 }
 
 .logo-box {
-    font-size: 1.5rem; /* Using relative units */
+    font-size: 30px;
     padding: 15px 30px;
     color: white;
     width: 240px;
-    height: 50px;
+    height: 50;
 }
 
 .focus-t1 {
     color: red;
+    font-family: "Arsenal SC", sans-serif;
 }
 
 .nav-links {
     display: flex;
-    justify-content: space-around; /* More flexible */
-    align-items: center;
+    width: 50%;
+    justify-content: space-between;
+    margin: -68px 0px 0px 560px;
     list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
 .nav-links a {
-    font-size: 1.3rem;
+    font-size: 21px;
     font-weight: bold;
     text-decoration: none;
     color: rgb(189, 179, 179);
+
 }
 
 .nav-links a:hover {
@@ -47,52 +46,91 @@ nav {
 .select-lang {
     width: 50px;
     height: 35px;
-    background-color: transparent;
+    margin: -8px;
+    background-color: #00000000;
     color: #328643;
-    font-size: 1rem;
+    font-size: 15px;
     border: none;
+
 }
 
 header {
+    position: relative;
     background-color: #131014b0;
-    width: 100%;
+    margin: -10px;
+    width: 101%;
     height: 530px;
+    top: 15px;
     border: 1px solid;
     box-shadow: 0 1px 0px rgb(52, 56, 61);
-    position: relative;
-}
-
-.icon1, .icon2 {
-    position: absolute;
-    box-shadow: 0 0 10px black, 0 0 25px black, 0 0 50px black;
 }
 
 .icon1 {
+    position: absolute;
     width: 30%;
     left: 60%;
     top: 115px;
+    box-shadow: 0 0 10px black, 0 0 25px black, 0 0 50px black;
 }
 
 .icon2 {
+    position: absolute;
     width: 35%;
     left: 57.5%;
     top: 35px;
 }
 
+
 .container-t1 {
     position: relative;
-    font-size: 1rem;
+    font-size: 15px;
     right: 10px;
     top: 45px;
 }
 
-.comment, .keyword, .string, .function, .variable, .operator, .green {
-    color: inherit;
-    font-weight: inherit;
+.comment {
+    position: relative;
+    color: #888;
+    /* Gray for comments */
+    font-style: italic;
+}
+
+.keyword {
+    color: rgb(148, 133, 235);
+    /* Blue for keywords */
+    font-weight: bold;
+}
+
+.string {
+    color: #dd1144;
+    /* Red for strings */
+}
+
+.function {
+    color: #00aa88;
+    /* Green for function names */
+    font-weight: bold;
+}
+
+.variable {
+    color: #aa00ff;
+    /* Purple for variables */
+}
+
+.operator {
+    color: #ff9900;
+    /* Orange for operators */
+}
+
+.green {
+    color: #00cc00;
+    /* Green for specific text */
+    font-weight: bold;
 }
 
 .button-h {
-    font-size: 1rem;
+    position: relative;
+    font-size: 15px;
     width: 120px;
     height: 40px;
     color: white;
@@ -101,6 +139,8 @@ header {
     border: none;
     border-radius: 14px;
     font-weight: bold;
+    top: 0px;
+    right:40px;
 }
 
 .button-h:hover {
@@ -109,10 +149,13 @@ header {
     box-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 80px cyan;
 }
 
-.learn-more1, .learn-more2 {
-    font-size: 1.2rem;
+.learn-more1 {
+    position: relative;
+    font-size: 18px;
     text-decoration: none;
     color: rgb(189, 179, 179);
+    left: 140px;
+    top: 45px;
 }
 
 .learn-more1:hover {
@@ -120,44 +163,54 @@ header {
     color: rgb(148, 133, 235);
 }
 
-.learn-more2:hover {
-    font-weight: bold;
-    color: #00cc00;
-}
-
-.container-who, .container-works, .container-hints, .container-courses {
+.container-who {
     background-color: #131014b0;
-    width: 100%;
+    width: 101%;
+    height: 350px;
+    margin: -5px;
     box-shadow: 0 1px 0px rgb(52, 56, 61);
 }
 
-.title-who, .works-title, .hints-title, .courses-title {
-    font-size: 2.5rem;
+.title-who {
+    font-size: 40px;
+    -webkit-text-stroke: 1px rgb(189, 179, 179);
     text-align: center;
     padding: 20px;
     text-shadow: 1px 1px 10px black, 1px 1px 25px black, 1px 1px 50px black;
-    -webkit-text-stroke: 1px rgb(189, 179, 179);
 }
 
+
 .pro1 {
+    position: relative;
     width: 300px;
-    margin: 0 auto;
+    left: 4%;
+    bottom: 90px;
     box-shadow: 0 0 10px black, 0 0 25px black, 0 0 50px black;
 }
 
 .article1 {
-    font-size: 1.25rem;
+    position: relative;
+    font-size: 20px;
     color: #00aa88;
-    margin: 50px auto;
-    width: 80%;
-    line-height: 1.5;
+    margin: 50px;
+    width: 62%;
+    left: 27%;
+    bottom: 110%;
+    white-space: 25px;
+    line-height: 38px;
     text-shadow: 0 0 10px black, 0 0 25px black, 0 0 50px black;
 }
 
 .see-more {
-    font-size: 1.25rem;
+    position: relative;
+    width: 105px;
+    height: 40px;
+    font-size: 20px;
     text-decoration: none;
     color: rgb(189, 179, 179);
+    background-color: rgba(255, 255, 255, 0);
+    left: 85%;
+    bottom: 131%;
     border: 1px solid;
     border-radius: 5px;
     box-shadow: 4px 4px 9px black;
@@ -167,28 +220,139 @@ header {
     box-shadow: 4px 4px 9px rgba(255, 255, 255, 0.534);
 }
 
+.container-works {
+    background-color: #131014b0;
+    width: 101%;
+    height: 1000px;
+    margin: 5px 0 0 -10px;
+    box-shadow: 0 1px 0px rgb(52, 56, 61);
+    display: flex;
+
+}
+
+.works {
+    width: 300px;
+    height: 800px;
+    aspect-ratio: 3/2;
+    margin: 130px 40px 0 70px;
+}
+
+.works:hover {
+    box-shadow: 10px 10px 40px rgb(31, 29, 29);
+
+}
+
+.works-title {
+    position: absolute;
+    font-size: 40px;
+    -webkit-text-stroke: 1px rgb(189, 179, 179);
+    left: 43%;
+    text-shadow: 1px 1px 10px black, 1px 1px 25px black, 1px 1px 50px black;
+}
+
+.container-hints {
+    background-color: #131014b0;
+    width: 101%;
+    height: 500px;
+    margin: 0px 0px 0px -5px;
+    box-shadow: 0 1px 0px rgb(52, 56, 61);
+
+}
+
+.hints-title {
+    position: absolute;
+    font-size: 40px;
+    -webkit-text-stroke: 1px rgb(189, 179, 179);
+    left: 43%;
+    text-shadow: 1px 1px 10px black, 1px 1px 25px black, 1px 1px 50px black;
+}
+
+.ascii2 {
+    position: absolute;
+    width: 25%;
+    left: 72%;
+    margin: 100px 0 0 -20px;
+    box-shadow: 0 0 10px black, 0 0 25px black, 0 0 50px black;
+}
+
+.article2 {
+    position: absolute;
+    font-size: 20px;
+    color: #00aa88;
+    width: 62%;
+    left: 4%;
+    margin-top: 110px;
+    line-height: 30px;
+    text-shadow: 0 0 10px black, 0 0 25px black, 0 0 50px black;
+}
+
+
+.learn-more2 {
+    position: relative;
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(189, 179, 179);
+    left: 50%;
+    top: 88%;
+}
+
+.learn-more2:hover {
+    font-weight: bold;
+    color: #00cc00;
+}
+
+.container-courses {
+    background-color: #131014b0;
+    width: 101%;
+    height: 550px;
+    margin: 0px 0px 0px -5px;
+    box-shadow: 0 1px 0px rgb(52, 56, 61)
+}
+
+.courses-title {
+
+    position: absolute;
+    font-size: 40px;
+    -webkit-text-stroke: 1px rgb(189, 179, 179);
+    left: 43%;
+    text-shadow: 1px 1px 10px black, 1px 1px 25px black, 1px 1px 50px black;
+
+}
+
 .coimg {
     width: 300px;
     height: 220px;
     object-fit: contain;
     aspect-ratio: 2;
-    margin: 20px;
-    padding: 0;
+    margin: 100px -10px 0 15px;
+    padding:0 0px 140px 0px ;
 }
 
 .coimg:hover {
     box-shadow: 0px 0px 15px rgb(52, 56, 61);
-    border-radius: 10px 11px;
+    border-radius:10px 11px ;
 }
 
-.courses-top, .apply-now {
+.courses-top {
+    position: absolute;
     color: rgb(189, 179, 179);
+    font-size: 25px;
+    display: inline-block;
+    margin: 340px 0px 0px -240px;
 }
 
 .apply-now {
-    font-size: 1.25rem;
+    position: absolute;
+    display: inline;
+    color: rgb(189, 179, 179);
+    display: inline-block;
+    margin: 400px 0px 0px -200px;
     width: 110px;
     height: 40px;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(189, 179, 179);
+    background-color: rgba(255, 255, 255, 0);
     border: 1px solid;
     border-radius: 5px;
     box-shadow: 4px 4px 9px black;
@@ -196,95 +360,58 @@ header {
 
 .apply-now:hover {
     color: black;
-    background-color: #00cc00;
-    border: none;
+    background-color:#00cc00;
+    border:none;
     box-shadow: 0px 1px 15px #00cc00;
 }
 
+
 footer {
+    position: relative;
     background-color: #131014b0;
-    width: 100%;
+    margin: -10px;
+    width: 101%;
     height: 50px;
+    top: 10px;
     border: 1px solid;
     box-shadow: 0 1px 10px rgb(52, 56, 61);
 }
 
-.foot-title, .copyright {
+.foot-title {
     color: #00aa88;
-    font-size: 1rem;
+    font-size: 15px;
+    margin: 15px 60px;
+    white-space: 20px;
+}
+
+.focus-f1 {
+    color: white;
+
+}
+
+.focus-f2 {
+    color: red;
+    font-weight: bold;
+}
+
+.copyright {
+    color: #00aa88;
+    font-size: 15px;
     text-align: center;
-    margin: 10px;
+    margin: -35px 0px;
 }
 
 .social-hw {
     list-style: none;
     display: flex;
-    justify-content: center;
-    margin: 0;
+    justify-content: end;
+    margin-right: 20px;
 }
 
 .icon-hw {
     width: 45px;
-    margin: 0 15px;
-    border-radius: 50%;
+    margin: 0 25px 0 -5px;
+    border-radius: 500px;
+    aspect-ratio: 2;
     object-fit: contain;
-}
-
-/* Media Queries for Responsiveness */
-
-@media (max-width: 768px) {
-    .nav-links {
-        flex-direction: column;
-        width: 100%;
-        margin: 0;
-    }
-
-    .nav-links a {
-        font-size: 1.1rem;
-    }
-
-    .container-t1, .article1, .learn-more1, .learn-more2 {
-        font-size: 1rem;
-    }
-
-    .icon1, .icon2 {
-        width: 100%;
-        left: 0;
-        top: 0;
-    }
-
-    .pro1, .coimg {
-        width: 100%;
-        height: auto;
-    }
-
-    .works, .apply-now, .see-more {
-        font-size: 1rem;
-        width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    .logo-box {
-        font-size: 1.2rem;
-        width: 200px;
-    }
-
-    .nav-links a {
-        font-size: 0.9rem;
-    }
-
-    .button-h, .apply-now, .see-more {
-        font-size: 0.9rem;
-    }
-
-    .article1 {
-        font-size: 1rem;
-        margin: 20px;
-    }
-
-    .container-who, .container-works, .container-hints, .container-courses {
-        height: auto;
-        padding: 20px;
-    }
 }
