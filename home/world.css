@@ -1,511 +1,290 @@
-/* Add this to the existing CSS */
+body {
+    background-color: black;
+    font-family: "Arsenal SC", sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-/* Mobile devices (max-width: 480px) */
-@media only screen and (max-width: 480px) {
+nav {
+    width: 100%;
+    height: 70px;
+    border-bottom: 0.5px solid white;
+    box-sizing: border-box;
+}
 
-    /* Adjust font sizes and margins */
-    body {
-        font-size: 14px;
-    }
+.logo-box {
+    font-size: 1.5rem; /* Using relative units */
+    padding: 15px 30px;
+    color: white;
+    width: 240px;
+    height: 50px;
+}
 
-    .logo-box {
-        font-size: 20px;
-        padding: 10px 20px;
-    }
+.focus-t1 {
+    color: red;
+}
 
+.nav-links {
+    display: flex;
+    justify-content: space-around; /* More flexible */
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links a {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(189, 179, 179);
+}
+
+.nav-links a:hover {
+    text-shadow: 0 0 15px #907cc9, 0 0 50px #db4eb1, 0 0 80px #dd4237;
+}
+
+.select-lang {
+    width: 50px;
+    height: 35px;
+    background-color: transparent;
+    color: #328643;
+    font-size: 1rem;
+    border: none;
+}
+
+header {
+    background-color: #131014b0;
+    width: 100%;
+    height: 530px;
+    border: 1px solid;
+    box-shadow: 0 1px 0px rgb(52, 56, 61);
+    position: relative;
+}
+
+.icon1, .icon2 {
+    position: absolute;
+    box-shadow: 0 0 10px black, 0 0 25px black, 0 0 50px black;
+}
+
+.icon1 {
+    width: 30%;
+    left: 60%;
+    top: 115px;
+}
+
+.icon2 {
+    width: 35%;
+    left: 57.5%;
+    top: 35px;
+}
+
+.container-t1 {
+    position: relative;
+    font-size: 1rem;
+    right: 10px;
+    top: 45px;
+}
+
+.comment, .keyword, .string, .function, .variable, .operator, .green {
+    color: inherit;
+    font-weight: inherit;
+}
+
+.button-h {
+    font-size: 1rem;
+    width: 120px;
+    height: 40px;
+    color: white;
+    background-color: #131014b0;
+    box-shadow: 0 0 20px cyan, 0 0 10px cyan;
+    border: none;
+    border-radius: 14px;
+    font-weight: bold;
+}
+
+.button-h:hover {
+    color: black;
+    background-color: cyan;
+    box-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 80px cyan;
+}
+
+.learn-more1, .learn-more2 {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: rgb(189, 179, 179);
+}
+
+.learn-more1:hover {
+    font-weight: bold;
+    color: rgb(148, 133, 235);
+}
+
+.learn-more2:hover {
+    font-weight: bold;
+    color: #00cc00;
+}
+
+.container-who, .container-works, .container-hints, .container-courses {
+    background-color: #131014b0;
+    width: 100%;
+    box-shadow: 0 1px 0px rgb(52, 56, 61);
+}
+
+.title-who, .works-title, .hints-title, .courses-title {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 20px;
+    text-shadow: 1px 1px 10px black, 1px 1px 25px black, 1px 1px 50px black;
+    -webkit-text-stroke: 1px rgb(189, 179, 179);
+}
+
+.pro1 {
+    width: 300px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px black, 0 0 25px black, 0 0 50px black;
+}
+
+.article1 {
+    font-size: 1.25rem;
+    color: #00aa88;
+    margin: 50px auto;
+    width: 80%;
+    line-height: 1.5;
+    text-shadow: 0 0 10px black, 0 0 25px black, 0 0 50px black;
+}
+
+.see-more {
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: rgb(189, 179, 179);
+    border: 1px solid;
+    border-radius: 5px;
+    box-shadow: 4px 4px 9px black;
+}
+
+.see-more:hover {
+    box-shadow: 4px 4px 9px rgba(255, 255, 255, 0.534);
+}
+
+.coimg {
+    width: 300px;
+    height: 220px;
+    object-fit: contain;
+    aspect-ratio: 2;
+    margin: 20px;
+    padding: 0;
+}
+
+.coimg:hover {
+    box-shadow: 0px 0px 15px rgb(52, 56, 61);
+    border-radius: 10px 11px;
+}
+
+.courses-top, .apply-now {
+    color: rgb(189, 179, 179);
+}
+
+.apply-now {
+    font-size: 1.25rem;
+    width: 110px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 5px;
+    box-shadow: 4px 4px 9px black;
+}
+
+.apply-now:hover {
+    color: black;
+    background-color: #00cc00;
+    border: none;
+    box-shadow: 0px 1px 15px #00cc00;
+}
+
+footer {
+    background-color: #131014b0;
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    box-shadow: 0 1px 10px rgb(52, 56, 61);
+}
+
+.foot-title, .copyright {
+    color: #00aa88;
+    font-size: 1rem;
+    text-align: center;
+    margin: 10px;
+}
+
+.social-hw {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.icon-hw {
+    width: 45px;
+    margin: 0 15px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 768px) {
     .nav-links {
-        margin: -40px 0px 0px 300px;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
     }
 
     .nav-links a {
-        font-size: 18px;
+        font-size: 1.1rem;
     }
 
-    .select-lang {
-        width: 30px;
-        height: 25px;
-        margin: -5px;
+    .container-t1, .article1, .learn-more1, .learn-more2 {
+        font-size: 1rem;
     }
 
-    .icon1,
-    .icon2 {
-        width: 20%;
+    .icon1, .icon2 {
+        width: 100%;
+        left: 0;
+        top: 0;
     }
 
-    .container-t1 {
-        font-size: 12px;
+    .pro1, .coimg {
+        width: 100%;
+        height: auto;
     }
 
-    .button-h {
-        width: 80px;
-        height: 30px;
-        font-size: 12px;
-    }
-
-    .learn-more1 {
-        font-size: 14px;
-        left: 100px;
-        top: 30px;
-    }
-
-    .container-who {
-        height: 250px;
-    }
-
-    .title-who {
-        font-size: 30px;
-    }
-
-    .pro1 {
-        width: 200px;
-        left: 2%;
-        bottom: 60px;
-    }
-
-    .article1 {
-        font-size: 16px;
-        width: 80%;
-        left: 10%;
-        bottom: 90%;
-    }
-
-    .see-more {
-        width: 80px;
-        height: 30px;
-        font-size: 14px;
-        left: 70%;
-        bottom: 110%;
-    }
-
-    .container-works {
-        height: 600px;
-    }
-
-    .works {
-        width: 200px;
-        height: 400px;
-        margin: 80px 20px 0 40px;
-    }
-
-    .works-title {
-        font-size: 30px;
-        left: 35%;
-    }
-
-    .container-hints {
-        height: 300px;
-    }
-
-    .hints-title {
-        font-size: 30px;
-        left: 35%;
-    }
-
-    .ascii2 {
-        width: 20%;
-        left: 60%;
-        margin: 50px 0 0 -20px;
-    }
-
-    .article2 {
-        font-size: 16px;
-        width: 80%;
-        left: 4%;
-        margin-top: 80px;
-    }
-
-    .learn-more2 {
-        font-size: 14px;
-        left: 40%;
-        top: 70%;
-    }
-
-    .container-courses {
-        height: 400px;
-    }
-
-    .courses-title {
-        font-size: 30px;
-        left: 35%;
-    }
-
-    .coimg {
-        width: 200px;
-        height: 150px;
-        margin: 50px -10px 0 15px;
-    }
-
-    .coimg:hover {
-        box-shadow: 0px 0px 10px rgb(52, 56, 61);
-    }
-
-    .courses-top {
-        font-size: 20px;
-        margin: 200px 0px 0px -200px;
-    }
-
-    .apply-now {
-        width: 80px;
-        height: 30px;
-        font-size: 14px;
-        margin: 250px 0px 0px -150px;
-    }
-
-    footer {
-        height: 30px;
-    }
-
-    .foot-title {
-        font-size: 12px;
-        margin: 10px 40px;
-    }
-
-    .social-hw {
-        margin-right: 10px;
-    }
-
-    .icon-hw {
-        width: 30px;
-        margin: 0 15px 0 -5px;
+    .works, .apply-now, .see-more {
+        font-size: 1rem;
+        width: 100%;
     }
 }
 
-/* Tablets (max-width: 768px) */
-@media only screen and (max-width: 768px) {
-
-    /* Adjust font sizes and margins */
-    body {
-        font-size: 16px;
-    }
-
+@media (max-width: 480px) {
     .logo-box {
-        font-size: 24px;
-        padding: 15px 30px;
-    }
-
-    .nav-links {
-        margin: -30px 0px 0px 400px;
+        font-size: 1.2rem;
+        width: 200px;
     }
 
     .nav-links a {
-        font-size: 20px;
+        font-size: 0.9rem;
     }
 
-    .select-lang {
-        width: 40px;
-        height: 30px;
-        margin: -10px;
-    }
-
-    .icon1,
-    .icon2 {
-        width: 25%;
-    }
-
-    .container-t1 {
-        font-size: 14px;
-    }
-
-    .button-h {
-        width: 100px;
-        height: 35px;
-        font-size: 14px;
-    }
-
-    .learn-more1 {
-        font-size: 16px;
-        left: 120px;
-        top: 40px;
-    }
-
-    .container-who {
-        height: 350px;
-    }
-
-    .title-who {
-        font-size: 35px;
-    }
-
-    .pro1 {
-        width: 250px;
-        left: 3%;
-        bottom: 70px;
+    .button-h, .apply-now, .see-more {
+        font-size: 0.9rem;
     }
 
     .article1 {
-        font-size: 18px;
-        width: 80%;
-        left: 10%;
-        bottom: 100%;
+        font-size: 1rem;
+        margin: 20px;
     }
 
-    .see-more {
-        width: 100px;
-        height: 35px;
-        font-size: 16px;
-        left: 70%;
-        bottom: 120%;
-    }
-
-    .container-works {
-        height: 800px;
-    }
-
-    .works {
-        width: 250px;
-        height: 500px;
-        margin: 100px 30px 0 50px;
-    }
-
-    .works-title {
-        font-size: 35px;
-        left: 35%;
-    }
-
-    .container-hints {
-        height: 400px;
-    }
-
-    .hints-title {
-        font-size: 35px;
-        left: 35%;
-    }
-
-    .ascii2 {
-        width: 25%;
-        left: 60%;
-        margin: 70px 0 0 -20px;
-    }
-
-    .article2 {
-        font-size: 18px;
-        width: 80%;
-        left: 4%;
-        margin-top: 100px;
-    }
-
-    .learn-more2 {
-        font-size: 16px;
-        left: 40%;
-        top: 80%;
-    }
-
-    .container-courses {
-        height: 500px;
-    }
-
-    .courses-title {
-        font-size: 35px;
-        left: 35%;
-    }
-
-    .coimg {
-        width: 250px;
-        height: 180px;
-        margin: 70px -10px 0 15px;
-    }
-
-    .coimg:hover {
-        box-shadow: 0px 0px 15px rgb(52, 56, 61);
-    }
-
-    .courses-top {
-        font-size: 22px;
-        margin: 250px 0px 0px -200px;
-    }
-
-    .apply-now {
-        width: 100px;
-        height: 35px;
-        font-size: 16px;
-        margin: 300px 0px 0px -150px;
-    }
-
-    footer {
-        height: 40px;
-    }
-
-    .foot-title {
-        font-size: 14px;
-        margin: 15px 50px;
-    }
-
-    .social-hw {
-        margin-right: 15px;
-    }
-
-    .icon-hw {
-        width: 40px;
-        margin: 0 20px 0 -5px;
-    }
-}
-
-/* Desktops (min-width: 1024px) */
-@media only screen and (min-width: 1024px) {
-
-    /* Adjust font sizes and margins */
-    body {
-        font-size: 18px;
-    }
-
-    .logo-box {
-        font-size: 30px;
-        padding: 20px 40px;
-    }
-
-    .nav-links {
-        margin: -20px 0px 0px 600px;
-    }
-
-    .nav-links a {
-        font-size: 24px;
-    }
-
-    .select-lang {
-        width: 50px;
-        height: 40px;
-        margin: -15px;
-    }
-
-    .icon1,
-    .icon2 {
-        width: 30%;
-    }
-
-    .container-t1 {
-        font-size: 16px;
-    }
-
-    .button-h {
-        width: 120px;
-        height: 40px;
-        font-size: 16px;
-    }
-
-    .learn-more1 {
-        font-size: 18px;
-        left: 150px;
-        top: 50px;
-    }
-
-    .container-who {
-        height: 450px;
-    }
-
-    .title-who {
-        font-size: 40px;
-    }
-
-    .pro1 {
-        width: 300px;
-        left: 4%;
-        bottom: 90px;
-    }
-
-    .article1 {
-        font-size: 20px;
-        width: 80%;
-        left: 10%;
-        bottom: 120%;
-    }
-
-    .see-more {
-        width: 120px;
-        height: 40px;
-        font-size: 18px;
-        left: 70%;
-        bottom: 140%;
-    }
-
-    .container-works {
-        height: 1000px;
-    }
-
-    .works {
-        width: 300px;
-        height: 600px;
-        margin: 130px 40px 0 70px;
-    }
-
-    .works-title {
-        font-size: 40px;
-        left: 35%;
-    }
-
-    .container-hints {
-        height: 500px;
-    }
-
-    .hints-title {
-        font-size: 40px;
-        left: 35%;
-    }
-
-    .ascii2 {
-        width: 30%;
-        left: 60%;
-        margin: 100px 0 0 -20px;
-    }
-
-    .article2 {
-        font-size: 20px;
-        width: 80%;
-        left: 4%;
-        margin-top: 120px;
-    }
-
-    .learn-more2 {
-        font-size: 18px;
-        left: 40%;
-        top: 90%;
-    }
-
-    .container-courses {
-        height: 600px;
-    }
-
-    .courses-title {
-        font-size: 40px;
-        left: 35%;
-    }
-
-    .coimg {
-        width: 300px;
-        height: 220px;
-        margin: 100px -10px 0 15px;
-    }
-
-    .coimg:hover {
-        box-shadow: 0px 0px 20px rgb(52, 56, 61);
-    }
-
-    .courses-top {
-        font-size: 25px;
-        margin: 350px 0px 0px -250px;
-    }
-
-    .apply-now {
-        width: 120px;
-        height: 40px;
-        font-size: 18px;
-        margin: 400px 0px 0px -200px;
-    }
-
-    footer {
-        height: 50px;
-    }
-
-    .foot-title {
-        font-size: 16px;
-        margin: 20px 60px;
-    }
-
-    .social-hw {
-        margin-right: 20px;
-    }
-
-    .icon-hw {
-        width: 50px;
-        margin: 0 25px 0 -5px;
+    .container-who, .container-works, .container-hints, .container-courses {
+        height: auto;
+        padding: 20px;
     }
 }
